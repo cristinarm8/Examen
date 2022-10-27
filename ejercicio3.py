@@ -14,3 +14,5 @@ class Alumno():
         else:
             print("{} ha suspendido el examen con un {} de nota".format(self.nombre, self.nota))
     
+    # Creación objetos:
+alumno1 = Alumno("Laura", 9)
