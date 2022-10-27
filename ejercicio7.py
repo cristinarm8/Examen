@@ -103,9 +103,19 @@ def restar(polinomio1, polinomio2):
             next2 = next2.sig
         else:
             agregar_termino(polinomio_resultado, next1.info.termino, next1.info.valor)
-            
+            print("Agregado término next1", next1.info.termino, next1.info.valor)
 
+    return polinomio_resultado
 
+polinomio1 = Polinomio()
+polinomio2 = Polinomio()
 
+agregar_termino(polinomio1, 10,3)
+agregar_termino(polinomio1, 7,7)
+agregar_termino(polinomio1, 9,5)
+agregar_termino(polinomio1, 4, 5)
 
-    
+agregar_termino(polinomio2, 7,6)
+agregar_termino(polinomio2, 8,5)
+agregar_termino(polinomio2, 8,8)
+agregar_termino(polinomio2, 4, 9)
