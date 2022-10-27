@@ -43,7 +43,23 @@ def agregar_termino(polinomio, termino, valor):
         # Variable aux.sig (campo de enlace) almacenará el puntero que apunta al término mayor del polinomip.
         aux.sig = polinomio.termino_mayor
         # Ese puntero almacena variable aux que contiene al Nodo.
-        
+        polinomio.termino_mayor = aux
+        # Atributo gradoo de la clase polinomio almacenas el termino que le has pasado como parámetro a la función:
+        polinomio.grado = termino
+
+    # ssi el término es menor que el grado del polinomio.
+    else:
+        actual = polinomio.termino_mayor
+        while(actual.sig is not None and termino  < actual.sig.info.termino):
+            actual = actual.sig
+
+        if actual.info.termino == termino:
+            actual.info.avlor = valor
+            return
+
+        # Salimos del bucle
+        aux.sig = actual.sig
+        actual.sig = aux
 
 
 
