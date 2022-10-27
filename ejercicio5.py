@@ -25,7 +25,7 @@ def desencriptar(x, clave):
 w = desencriptar(x, clave)
 print(f"Desencriptar mensaje: {w}")
 
-print("\n*********************************************************************************************\n")
+print("\n***************************************************************************************************************\n")
 print("Funcion recursiva:\n")
 
 def encriptar_rec(mensaje_original, clave):
