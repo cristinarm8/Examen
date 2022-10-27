@@ -14,5 +14,6 @@ def encriptar(caracteres, clave):
         # Después, todo ello lo convertimos en un chr.
     return mensaje_encriptado
 
-encriptar(caracteres, clave)
+x = encriptar(caracteres, clave)
+print(f"Encriptar mensaje: {x}")
 
