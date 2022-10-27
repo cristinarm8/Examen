@@ -8,3 +8,8 @@ def estructurar_matriz(filas, columnas):
         # Creación columnas
         matriz[i] = [None] * columnas
     return matriz
+
+def agregar_elementos_matriz(filas, columnas):
+    matriz = []
+    for i in range(filas):
+        
