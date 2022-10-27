@@ -6,6 +6,9 @@ class Alumno():
         self.nombre = nombre
         self.nota = nota
         print("El alumno se ha creado con éxito")
+    
+    def __str__(self):
+        return "Nombre: {}\nNota: {}".format(self.nombre. self.nota)
 
     def calificacion(self):
 
@@ -16,12 +19,12 @@ class Alumno():
 
 # Creación objeto:
 alumno1 = Alumno("Laura", 9)
-#print(alumno1)
+print(alumno1)
 
 # Método calificación
 alumno1.calificacion()
 
 # Creación objeto:
 alumno2 = Alumno("Álvaro", 4)
-#print(alumno2)
+print(alumno2)
 alumno2.calificacion()
