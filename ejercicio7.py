@@ -107,9 +107,11 @@ def restar(polinomio1, polinomio2):
         next1 = next1.sig
     return polinomio_resultado
 
+# Creación polinomios
 polinomio1 = Polinomio()
 polinomio2 = Polinomio()
 
+# Agregar términos
 agregar_termino(polinomio1, 10,3)
 agregar_termino(polinomio1, 7,7)
 agregar_termino(polinomio1, 9,5)
