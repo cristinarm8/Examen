@@ -17,3 +17,10 @@ def encriptar(caracteres, clave):
 x = encriptar(caracteres, clave)
 print(f"Encriptar mensaje: {x}")
 
+
+def desencriptar(x, clave):
+    for x in caracteres:
+        mensaje_encriptado += chr(ord(x)-clave)
+    return mensaje_encriptado
+w = desencriptar(x, clave)
+
