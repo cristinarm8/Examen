@@ -8,7 +8,7 @@ def estructurar_matriz(filas, columnas):
         matriz[i] = [None] * columnas
     return matriz
 
-
+# Función rellenar matriz
 def rellenar(fila, columna):
     matriz = estructurar_matriz(5,5)
     for i in range(fila):
