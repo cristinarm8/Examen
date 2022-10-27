@@ -32,7 +32,6 @@ def encriptar_rec(mensaje_original, clave):
     if mensaje_original == "":
         return ""
     else:
-        return chr(ord(mensaje_original[0] + clave)) + encriptar_rec(mensaje_original[1:] + clave)
+        return chr(ord(mensaje_original[0] + clave)) + encriptar_rec(mensaje_original[1:], clave)
 
-
-
+x = encriptar_rec("".join(caracteres, clave))
