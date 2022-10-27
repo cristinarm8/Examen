@@ -24,5 +24,6 @@ alumno1.calificacion()
 # Creación objeto:
 alumno2 = Alumno("Álvaro", 4)
 #print(alumno2)
+alumno2.calificacion()
 
 
