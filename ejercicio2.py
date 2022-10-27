@@ -1,8 +1,4 @@
 lista = [18, 50, 210, 80, 145,33,70,30]
 
-def múltiplos(numero):
-    for i in range(lista):
-        if i % 10 == 0 and < 200:
-            print(numero)
-        else:
-
+numeros = [x for x in lista if x%10 == 0 and x < 200]
+print(numeros)
