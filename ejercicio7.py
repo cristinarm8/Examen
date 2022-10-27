@@ -119,3 +119,14 @@ agregar_termino(polinomio2, 7,6)
 agregar_termino(polinomio2, 8,5)
 agregar_termino(polinomio2, 8,8)
 agregar_termino(polinomio2, 4, 9)
+
+print(polinomio1)
+print(polinomio2)
+
+print("Eliminamos término")
+eliminar_termino1(polinomio1, 10)
+print(f"Eliminar: ", polinomio1)
+
+print("Restar:")
+resta = restar(polinomio1, polinomio2)
+print(resta)
