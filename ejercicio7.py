@@ -83,7 +83,17 @@ def eliminar_termino1(polinomio, termino):
         print("Término no encontrado")
 
     
+def restar(polinomio1, polinomio2):
 
+    polinomio_resultado = Polinomio()
+
+    next1 = polinomio1.termino_mayor
+    next2 = polinomio2.termino_mayor
+
+    while(next1 is not None):
+        while(next2 is not None and next2.info.termino > next1.info.termino):
+            agregar_termino(polinomio_resultado, next2.info.termino, next2.info.valor)
+            
 
 
 
