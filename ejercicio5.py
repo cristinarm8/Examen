@@ -19,8 +19,8 @@ print(f"Encriptar mensaje: {x}")
 
 
 def desencriptar(x, clave):
-    for x in caracteres:
-        mensaje_encriptado += chr(ord(x)-clave)
-    return mensaje_encriptado
+  return encriptar(x, - clave)
+
 w = desencriptar(x, clave)
+print(f"Desencriptar mensaje: {w}")
 
