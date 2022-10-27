@@ -71,8 +71,19 @@ def eliminar_termino1(polinomio, termino):
     if aux.info.termino == termino:
         polinomio.termino_mayor = aux.sig
         return
+    while(next is not None and next.info.termino != termino):
+        # Variable aux va a almacenar puntero que apunta hacia el siguiente nodo.
+        net = next.sig
+        aux = aux.sig
 
-        
+    # Si aux que almacena puntero del siguiente nodo no es None y el término de ese nodo es igual al término.
+    if (next is not None and next.info.termino != termino):
+        aux.sig = next.sig
+    else:
+        print("Término no encontrado")
+
+    
+
 
 
 
