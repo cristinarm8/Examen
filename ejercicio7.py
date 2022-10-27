@@ -38,6 +38,12 @@ def agregar_termino(polinomio, termino, valor):
     # Variable que va a almacenar el dato(aux.info): campo de información del Nodo.
     aux.info = dato
 
+    # si el término es mayor que el grado del polinomio:
+    if (termino > polinomio.grado):
+        # Variable aux.sig (campo de enlace) almacenará el puntero que apunta al término mayor del polinomip.
+        aux.sig = polinomio.termino_mayor
+        # Ese puntero almacena variable aux que contiene al Nodo.
+        
 
 
 
