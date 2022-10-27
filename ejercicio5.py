@@ -35,3 +35,13 @@ def encriptar_rec(mensaje_original, clave):
         return chr(ord(mensaje_original[0] + clave)) + encriptar_rec(mensaje_original[1:], clave)
 
 x = encriptar_rec("".join(caracteres, clave))
+print(f"Encriptar en forma recursiva: {x}")
+
+def desencriptar_rec(mensaje_encriptado, clave):
+
+    if mensaje_encriptado == "":
+        return ""
+    else:
+        return chr(ord(mensaje_encriptado[0] - clave)) + desencriptar_rec(mensaje_encriptado[1:], clave) 
+print(desencriptar_rec(x, clave))
+
