@@ -18,7 +18,6 @@ def encriptar(caracteres, clave):
 x = encriptar(caracteres, clave)
 print(f"Encriptar mensaje: {x}")
 
-
 def desencriptar(x, clave):
     #En este caso la clave será negativa para -> desencriptar el mensaje.
   return encriptar(x, - clave)
@@ -32,9 +31,9 @@ def encriptar_rec(mensaje_original, clave):
     if mensaje_original == "":
         return ""
     else:
-        return chr(ord(mensaje_original[0] + clave)) + encriptar_rec(mensaje_original[1:], clave)
+        return chr(ord(mensaje_original[0]) + clave) + encriptar_rec(mensaje_original[1:], clave)
 
-x = encriptar_rec("".join(caracteres, clave))
+x = encriptar_rec("".join(caracteres), clave)
 print(f"Encriptar en forma recursiva: {x}")
 
 def desencriptar_rec(mensaje_encriptado, clave):
@@ -43,5 +42,6 @@ def desencriptar_rec(mensaje_encriptado, clave):
         return ""
     else:
         return chr(ord(mensaje_encriptado[0] - clave)) + desencriptar_rec(mensaje_encriptado[1:], clave) 
-print(desencriptar_rec(x, clave))
+w = desencriptar_rec(x, clave)
+print(f"Desencriptar en forma recursiva: {w}")
 
