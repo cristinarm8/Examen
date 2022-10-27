@@ -25,6 +25,7 @@ class Polinomio(object):
         next = self.termino_mayor
         while(next.sig is not None):
             resultado += (str(next.info.valor) + "x^" + str(next.info.termino) + " + ")
+            
 
 
 
