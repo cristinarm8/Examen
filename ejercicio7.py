@@ -104,7 +104,7 @@ def restar(polinomio1, polinomio2):
         else:
             agregar_termino(polinomio_resultado, next1.info.termino, next1.info.valor)
             print("Agregado término next1", next1.info.termino, next1.info.valor)
-
+        next1 = next1.sig
     return polinomio_resultado
 
 polinomio1 = Polinomio()
@@ -122,11 +122,11 @@ agregar_termino(polinomio2, 4, 9)
 
 print(polinomio1)
 print(polinomio2)
-
+'''
 print("Eliminamos término")
 eliminar_termino1(polinomio1, 10)
 print(f"Eliminar: ", polinomio1)
-
+'''
 print("Restar:")
 resta = restar(polinomio1, polinomio2)
 print(resta)
