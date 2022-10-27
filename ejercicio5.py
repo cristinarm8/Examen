@@ -5,6 +5,7 @@ clave = 10
 # Bucle que recorre del 32 al (126-1) y tranforma cada nº en un caracter con chr()
 caracteres = [chr(i) for i in range(32,126)]
 
+print("\nFunción iterativa: \n")
 # Funcion encriptar:
 def encriptar(caracteres, clave):
     mensaje_encriptado = ""
@@ -19,8 +20,11 @@ print(f"Encriptar mensaje: {x}")
 
 
 def desencriptar(x, clave):
+    #En este caso la clave será negativa para -> desencriptar el mensaje.
   return encriptar(x, - clave)
 
 w = desencriptar(x, clave)
 print(f"Desencriptar mensaje: {w}")
+
+
 
