@@ -1,5 +1,4 @@
 # Creación de una matriz
-
 def estructurar_matriz(filas, columnas):
     #Creamos una matriz nueva
     matriz = [None] * filas
@@ -11,10 +10,18 @@ def estructurar_matriz(filas, columnas):
 
 
 def rellenar(fila, columna):
-    matriz = estructurar_matriz(3,3)
+    matriz = estructurar_matriz(5,5)
     for i in range(fila):
         for j in range(columna):
             matriz[i][j] = int(input("Valor Fila: {}, Valor Columna: {}".format(i+1, j+1)))
+    return matriz
+
+# Calcular determinante:
+
+def calculo_determinante(a):
+    determinante = ((a[0][0] * a[1][1]* a[2][2]) + (a[0][1] * a[1][2] * a[2][0])  + (a[0][2] * a[1][0] * a[2][1] )) - ((a[2][0]* a[1][1] * a[0][2]) + (a[2][1] * a[1][2] * a[0][0]) + (a[2][2] * a[1][0] * a[0][1]))
+    return determinante
+
 '''
 def agregar_elementos_matriz(filas, columnas):
     matriz = []
