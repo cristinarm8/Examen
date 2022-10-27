@@ -9,5 +9,10 @@ caracteres = [chr(i) for i in range(32,126)]
 def encriptar(caracteres, clave):
     mensaje_encriptado = ""
     for x in caracteres:
-        
+        # Transformamos cada valor que recorre el bucle (x) en un ordinal para que pueda sumarse con la clave que es un nº:
+        mensaje_encriptado += chr(ord(x) + clave)
+        # Después, todo ello lo convertimos en un chr.
+    return mensaje_encriptado
+
+encriptar(caracteres, clave)
 
