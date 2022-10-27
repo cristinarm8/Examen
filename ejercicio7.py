@@ -91,8 +91,18 @@ def restar(polinomio1, polinomio2):
     next2 = polinomio2.termino_mayor
 
     while(next1 is not None):
+
         while(next2 is not None and next2.info.termino > next1.info.termino):
             agregar_termino(polinomio_resultado, next2.info.termino, next2.info.valor)
+            print("Agregado término next2", next2.info.termino, next2.info.valor)
+            next2 = next2.sig
+
+        if next2 is not None and next2.info.termino == next1.info.termino:
+            agregar_termino(polinomio_resultado,next2.info.termino, next1.info.valor - next2.info.valor)
+            print("Resultado términos")
+            next2 = next2.sig
+        else:
+            agregar_termino(polinomio_resultado, next1.info.termino, next1.info.valor)
             
 
 
