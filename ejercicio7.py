@@ -9,6 +9,17 @@ class datoPolinomio(object):
         self.valor = valor
         self.termino = termino
 
+class Polinomio(object):
+    """Clase polinomio"""
+
+    def __init__(self):
+        # Crea un polinomio del grado cero
+        # Puntero que apunta al término amyor del polinomio.
+        self.termino_mayor = None
+        # Grado del polinomio.
+        self.grado = -1
+        
+
 
 
     
