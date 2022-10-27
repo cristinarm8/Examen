@@ -13,6 +13,16 @@ class Alumno():
             print("{} ha aprobado el examen con un {} de nota".format(self.nombre, self.nota))
         else:
             print("{} ha suspendido el examen con un {} de nota".format(self.nombre, self.nota))
-    
-    # Creación objetos:
+
+# Creación objeto:
 alumno1 = Alumno("Laura", 9)
+#print(alumno1)
+
+# Método calificación
+alumno1.calificacion()
+
+# Creación objeto:
+alumno2 = Alumno("Álvaro", 4)
+#print(alumno2)
+
+
