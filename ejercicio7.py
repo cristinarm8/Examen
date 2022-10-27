@@ -29,6 +29,16 @@ class Polinomio(object):
         resultado += (str(next.info.valor) + "x^" + str(next.info.termino))
         return resultado 
 
+def agregar_termino(polinomio, termino, valor):
+    """ Agrega un término y su valor al polinomio"""
+    # Variable que va a almacenar la clase Nodo
+    aux = Nodo()
+    # Variable que almacena clase datoPolinomio
+    dato = datoPolinomio(valor, termino)
+    # Variable que va a almacenar el dato(aux.info): campo de información del Nodo.
+    aux.info = dato
+
+
 
 
 
