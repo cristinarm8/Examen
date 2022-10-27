@@ -47,10 +47,12 @@ def agregar_termino(polinomio, termino, valor):
         # Atributo gradoo de la clase polinomio almacenas el termino que le has pasado como parámetro a la función:
         polinomio.grado = termino
 
-    # ssi el término es menor que el grado del polinomio.
+    # Si el término es menor que el grado del polinomio.
     else:
         actual = polinomio.termino_mayor
+        # Mientras que el puntero que apunta al nodo siguiente no sea None y el término sea menor al término del nodo siguiente.
         while(actual.sig is not None and termino  < actual.sig.info.termino):
+
             actual = actual.sig
 
         if actual.info.termino == termino:
@@ -61,6 +63,16 @@ def agregar_termino(polinomio, termino, valor):
         aux.sig = actual.sig
         actual.sig = aux
 
+def eliminar_termino1(polinomio, termino):
+
+    aux = polinomio.termino_mayor
+    next = aux.sig
+    
+    if aux.info.termino == termino:
+        polinomio.termino_mayor = aux.sig
+        return
+
+        
 
 
 
